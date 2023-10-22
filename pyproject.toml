@@ -1,0 +1,16 @@
+[tool.poetry]
+name = "ciw-project-2023"
+version = "0.1.0"
+description = ""
+authors = ["Niklas Paulicks <paulicks@justtrack.io>"]
+license = "MIT"
+readme = "README.md"
+
+[tool.poetry.dependencies]
+python = "^3.11"
+rdkit = "^2023.3.3"
+
+
+[build-system]
+requires = ["poetry-core"]
+build-backend = "poetry.core.masonry.api"
