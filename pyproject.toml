@@ -2,8 +2,8 @@
 name = "ciw-project-2023"
 version = "0.1.0"
 description = ""
-authors = ["Niklas Paulicks <paulicks@justtrack.io>"]
-license = "MIT"
+authors = []
+license = "LICENSE"
 readme = "README.md"
 
 [tool.poetry.dependencies]
