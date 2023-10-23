@@ -9,6 +9,7 @@ readme = "README.md"
 [tool.poetry.dependencies]
 python = "^3.11"
 rdkit = "^2023.3.3"
+jupyter = "^1.0.0"
 
 
 [build-system]
