@@ -13,4 +13,13 @@ Analysiert die PubChem und baut eine scaffolding visualisierung. Hier werden ang
 
 #link("https://github.com/velkoborsky/scaffvis")
 
+
+@briemMolecularSimilarityBased1996
+
+PAF (platelet-activating-factor) antagonists:
+#link("https://en.wikipedia.org/wiki/Platelet-activating_factor")
+
+-> Full list: @singhPlateletactivatingFactorPAF2013 
+
+
 #bibliography("references.bib")
