@@ -3,14 +3,15 @@ import requests
 from rdkit.Chem import Mol, MolFromSmiles
 from io import StringIO
 
+
 def bioassay_url_builder(aid: int) -> str:
     return 'https://pubchem.ncbi.nlm.nih.gov/assay/pcget.cgi?query=download&record_type=datatable&actvty=active&response_type=save&aid={}'.format(aid)
 
 
-def mols_from_csv_file(fileName: str) -> list[Mol]:
+def mols_from_csv_file(file_name: str) -> list[Mol]:
     mols = list[Mol]()
 
-    with open(fileName) as file:
+    with open(file_name) as file:
         for row in csv.DictReader(file):
             try:
                 smiles = row['PUBCHEM_EXT_DATASOURCE_SMILES']
@@ -23,7 +24,7 @@ def mols_from_csv_file(fileName: str) -> list[Mol]:
     return mols
 
 
-def mols_from_assay_id(aid: int, type='active') -> list[Mol]:
+def mols_from_assay_id(aid: int) -> list[Mol]:
     mols = list[Mol]()
 
     url = bioassay_url_builder(aid)
